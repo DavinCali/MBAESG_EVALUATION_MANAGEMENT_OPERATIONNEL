@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 import duckdb
 import pandas as pd
@@ -21,7 +20,7 @@ df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
 con = duckdb.connect()
 con.execute("CREATE OR REPLACE TABLE netflix AS SELECT * FROM df")
 
-# 🔽 Filtres dynamiques : année, type, listed_in
+# Filtres dynamiques : année, type, genre
 year_options = sorted(df['date_added'].dropna().dt.year.unique())
 type_options = sorted(df['type'].dropna().unique())
 listed_in_unique = sorted(
