@@ -10,14 +10,18 @@ L'objectif est de créer une application web interactive, développée avec Stre
 - Visualiser **quatre indicateurs clés de performance (KPI)** à travers des visualisations interactives.
 - Filtrer dynamiquement les résultats par **année de sortie**, **type de contenu**, **pays** ou **genre**.
 
+Nous avons utilisé Streamlit pour créer l’interface web interactive. Les données sont stockées et interrogées avec DuckDB. Les graphiques sont réalisés avec Plotly pour rendre les visualisations dynamiques et claires. Enfin, nous avons utilisé Git pour gérer le projet et collaborer efficacement.
+
 ---
 
 ##  Installation et exécution
 
 ### 1. Prérequis
 
-- Python 3.9 ou plus récent
-- pip
+- Python 3.9+
+- Streamlit
+- DuckDB
+- Plotly
 - Git
 
 ### 2. Installation du projet
@@ -26,6 +30,8 @@ L'objectif est de créer une application web interactive, développée avec Stre
 git clone https://github.com/nom-du-groupe/nom-du-projet.git
 cd nom-du-projet
 pip install -r requirements.txt
+
+```
 
 ### 3. Lancement de l'application
 
